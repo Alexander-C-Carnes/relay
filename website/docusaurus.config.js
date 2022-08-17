@@ -13,23 +13,23 @@ const versions = require('./versions.json');
 const {fbContent, isInternal} = require('internaldocs-fb-helpers');
 
 module.exports = {
-  title: 'Relay',
-  tagline: 'The GraphQL client that scales with you.',
+  title: 'Firebolt',
+  tagline: 'Firebolt, woohoo',
   url: 'https://relay.dev',
   baseUrl: '/',
   trailingSlash: true,
-  organizationName: 'facebook',
-  projectName: 'relay',
+  organizationName: 'rdkcentral',
+  projectName: 'firebolt-documentation',
   scripts: [],
   favicon: 'img/favicon.png',
   customFields: {
     users: [
       {
-        caption: '1stdibs',
+        caption: 'Sky Media',
         image: '/img/logos/1stdibs.png',
         infoLink: 'https://www.1stdibs.com/',
         pinned: true,
-        description: 'Used on 1stdibs.com',
+        description: 'Used on Sky Glass',
       },
       {
         caption: 'Artsy',
@@ -38,160 +38,11 @@ module.exports = {
         pinned: true,
         description: 'Used on artsy.net, and the React Native iOS app, Eigen.',
       },
-      {
-        caption: 'Entria',
-        image: '/img/logos/entria.png',
-        infoLink: 'https://github.com/entria',
-        pinned: true,
-        description: 'Powers feedback.house',
-      },
-      {
-        caption: 'Facebook',
-        image: '/img/logos/facebook.png',
-        infoLink: 'https://code.facebook.com',
-        pinned: true,
-        description:
-          'Used on facebook.com, and in the React Native mobile app.',
-      },
-      {
-        caption: 'Oculus',
-        image: '/img/logos/oculus.png',
-        infoLink: 'https://www.oculus.com/',
-        pinned: true,
-        description:
-          'Used on oculus.com, Oculus Home in VR, and the React Native Oculus companion app.',
-      },
-      {
-        caption: 'Lattice',
-        image: '/img/logos/lattice_logo_full_color.png',
-        infoLink: 'https://lattice.com/',
-        pinned: false,
-      },
-      {
-        caption: 'Cirrus CI',
-        image: '/img/logos/cirrus.png',
-        infoLink: 'https://cirrus-ci.com/',
-        pinned: false,
-      },
-      {
-        caption: 'Friday',
-        image: '/img/logos/friday.png',
-        infoLink: 'https://friday.work/',
-        pinned: false,
-      },
-      {
-        caption: 'Flexport',
-        image: '/img/logos/flexport.png',
-        infoLink: 'https://flexport.com',
-        pinned: false,
-      },
-      {
-        caption: 'Parabol',
-        image: '/img/logos/parabol.png',
-        infoLink: 'https://www.parabol.co/',
-        pinned: false,
-      },
-      {
-        caption: 'itDAGENE',
-        image: '/img/logos/itdagene.png',
-        infoLink: 'https://github.com/itdagene-ntnu/itdagene-webapp',
-        pinned: false,
-      },
-      {
-        caption: 'Kiwi.com',
-        image: '/img/logos/kiwicom.png',
-        infoLink: 'https://www.kiwi.com/',
-        pinned: false,
-      },
-      {
-        caption: 'Jusbrasil',
-        image: '/img/logos/jusbrasil.png',
-        infoLink: 'https://github.com/jusbrasil',
-        pinned: false,
-      },
-      {
-        caption: 'Up',
-        image: '/img/logos/up.png',
-        infoLink: 'https://up.com.au/',
-        pinned: false,
-      },
-      {
-        caption: 'AutoGuru',
-        image: '/img/logos/autoguru.png',
-        infoLink: 'https://www.autoguru.com.au/',
-        pinned: true,
-        description: 'Used at autoguru.com.au, and affiliates',
-      },
-      {
-        caption: 'Foton',
-        image: '/img/logos/foton.png',
-        infoLink: 'https://fotontech.io',
-        pinned: false,
-      },
-      {
-        caption: 'M1 Finance',
-        image: '/img/logos/m1finance.png',
-        infoLink: 'https://www.m1finance.com/',
-        pinned: false,
-      },
-      {
-        caption: 'Bumped',
-        image: '/img/logos/bumped.png',
-        infoLink: 'https://bumped.com/',
-        pinned: false,
-      },
-      {
-        caption: 'Clubhouse',
-        image: '/img/logos/clubhouse.png',
-        infoLink: 'https://clubhouse.io/',
-        pinned: false,
-      },
-      {
-        caption: 'Habilelabs',
-        image: '/img/logos/habilelabs.png',
-        infoLink: 'http://www.habilelabs.io/',
-        pinned: false,
-      },
-      {
-        caption: 'Quanto',
-        image: '/img/logos/quanto.png',
-        infoLink: 'https://www.contaquanto.com.br/',
-        pinned: false,
-      },
-      {
-        caption: 'Butterfly Network',
-        image: '/img/logos/butterfly.png',
-        infoLink: 'https://www.butterflynetwork.com/',
-        pinned: false,
-      },
-      {
-        caption: 'Mindworking',
-        image: '/img/logos/mindworking.png',
-        infoLink: 'https://mindworking.eu/',
-        pinned: false,
-      },
-      {
-        caption: 'domonda',
-        image: '/img/logos/domonda.png',
-        infoLink: 'https://domonda.com/',
-        pinned: false,
-      },
-      {
-        caption: 'SwissDev JavaScript Jobs',
-        image: '/img/logos/swissdev-javascript-jobs.png',
-        infoLink: 'https://swissdevjobs.ch/jobs/JavaScript/All',
-        pinned: false,
-      },
-      {
-        caption: 'Atlassian',
-        image: '/img/logos/vertical-logo-gradient-blue-atlassian.svg',
-        infoLink: 'https://www.atlassian.com/',
-        pinned: false,
-      },
+
     ],
   },
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   onDuplicateRoutes: 'throw',
   presets: [
     [
@@ -206,11 +57,7 @@ module.exports = {
             internal: false,
             external: true,
           }),
-          editUrl: fbContent({
-            internal:
-              'https://www.internalfb.com/intern/diffusion/FBS/browse/master/xplat/js/RKJSModules/Libraries/Relay/oss/__github__/website/',
-            external: 'https://github.com/facebook/relay/tree/main/website',
-          }),
+          editUrl: "https://github.com/rdkcentral/firebolt-documentation",
 
           path: './docs/',
 
@@ -243,12 +90,12 @@ module.exports = {
             './src/css/custom.css',
           ],
         },
-        gtag: {
-          trackingID: 'UA-44373548-50',
-        },
-        googleAnalytics: {
-          trackingID: 'UA-44373548-50',
-        },
+        // gtag: {
+        //   trackingID: 'UA-44373548-50',
+        // },
+        // googleAnalytics: {
+        //   trackingID: 'UA-44373548-50',
+        // },
       },
     ],
   ],
@@ -267,98 +114,69 @@ module.exports = {
             return fromPaths;
           }
         },
-        redirects: [
-          {
-            to: '/docs/',
-            from: [
-              '/docs/en/introduction-to-relay',
-              '/docs/introduction-to-relay',
-            ],
-          },
-          {
-            to: '/docs/getting-started/step-by-step-guide/',
-            from: ['/docs/en/quick-start-guide', '/docs/quick-start-guide'],
-          },
-          {
-            to: '/docs/getting-started/step-by-step-guide/',
-            from: [
-              '/docs/en/experimental/step-by-step',
-              '/docs/experimental/step-by-step',
-            ],
-          },
-          {
-            to: '/docs/guides/testing-relay-with-preloaded-queries/',
-            from: ['/docs/guides/testing-relay-with-preloaded-components/'],
-          },
-          {
-            to: '/docs/guides/compiler/',
-            from: [
-              '/docs/en/graphql-in-relay.html',
-              '/docs/en/graphql-in-relay',
-              '/docs/graphql-in-relay.html',
-              '/docs/graphql-in-relay',
-            ],
-          },
-          {
-            to: '/docs/principles-and-architecture/thinking-in-graphql/',
-            from: [
-              '/docs/en/thinking-in-graphql.html',
-              '/docs/en/thinking-in-graphql',
-              '/docs/thinking-in-graphql.html',
-              '/docs/thinking-in-graphql',
-            ],
-          },
-          {
-            to: '/docs/principles-and-architecture/thinking-in-relay/',
-            from: [
-              '/docs/en/thinking-in-relay.html',
-              '/docs/en/thinking-in-relay',
-              '/docs/thinking-in-relay.html',
-              '/docs/thinking-in-relay',
-            ],
-          },
-          {
-            to: '/docs/guides/type-emission/',
-            from: ['/docs/en/type-emission', '/docs/type-emission'],
-          },
-          {
-            to: '/docs/guides/client-schema-extensions/',
-            from: [
-              '/docs/en/local-state-management',
-              '/docs/en/next/local-state-management',
-              '/docs/local-state-management',
-              '/docs/next/local-state-management',
-            ],
-          },
-          {
-            to: '/docs/api-reference/store/',
-            from: [
-              '/docs/en/relay-store',
-              '/docs/en/next/relay-store',
-              '/docs/relay-store',
-              '/docs/next/relay-store',
-            ],
-          },
-          {
-            to: '/docs/guided-tour/updating-data/graphql-mutations/',
-            from: [
-              '/docs/en/mutations',
-              '/docs/en/next/mutations',
-              '/docs/mutations',
-              '/docs/next/mutations',
-            ],
-          },
-          {
-            to: '/compiler-explorer',
-            from: ['/compiler-playground'],
-          },
-        ],
+        // redirects: [
+        //   {
+        //     to: '/docs/',
+        //     from: [
+        //       '/docs/en/introduction-to-relay',
+        //       '/docs/introduction-to-relay',
+        //     ],
+        //   },
+        //   {
+        //     to: '/docs/getting-started/step-by-step-guide/',
+        //     from: ['/docs/en/quick-start-guide', '/docs/quick-start-guide'],
+        //   },
+        //   {
+        //     to: '/docs/getting-started/step-by-step-guide/',
+        //     from: [
+        //       '/docs/en/experimental/step-by-step',
+        //       '/docs/experimental/step-by-step',
+        //     ],
+        //   },
+        //   {
+        //     to: '/docs/guides/testing-relay-with-preloaded-queries/',
+        //     from: ['/docs/guides/testing-relay-with-preloaded-components/'],
+        //   },
+        //
+        //
+        //   {
+        //     to: '/docs/principles-and-architecture/thinking-in-relay/',
+        //     from: [
+        //       '/docs/en/thinking-in-relay.html',
+        //       '/docs/en/thinking-in-relay',
+        //       '/docs/thinking-in-relay.html',
+        //       '/docs/thinking-in-relay',
+        //     ],
+        //   },
+        //   {
+        //     to: '/docs/guides/type-emission/',
+        //     from: ['/docs/en/type-emission', '/docs/type-emission'],
+        //   },
+        //   {
+        //     to: '/docs/guides/client-schema-extensions/',
+        //     from: [
+        //       '/docs/en/local-state-management',
+        //       '/docs/en/next/local-state-management',
+        //       '/docs/local-state-management',
+        //       '/docs/next/local-state-management',
+        //     ],
+        //   },
+        //   {
+        //     to: '/docs/api-reference/store/',
+        //     from: [
+        //       '/docs/en/relay-store',
+        //       '/docs/en/next/relay-store',
+        //       '/docs/relay-store',
+        //       '/docs/next/relay-store',
+        //     ],
+        //   },
+        // ],
       },
     ],
   ],
   themeConfig: {
     navbar: {
-      title: 'Relay',
+      title: 'Firebolt',
       style: 'primary',
       hideOnScroll: false,
       items: [
@@ -367,18 +185,14 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {
-          to: 'blog/',
-          label: 'Blog',
-          position: 'left',
-        },
+
         {
           to: '/help',
           label: 'Help',
           position: 'left',
         },
         {
-          href: 'https://github.com/facebook/relay',
+          href: 'https://github.com/rdkcentral/firebolt-documentation',
           label: 'GitHub',
           position: 'left',
         },
@@ -446,18 +260,18 @@ module.exports = {
       logo: {
         src: 'img/relay.svg',
       },
-      copyright: `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} RDK Central. Built with Docusaurus.`,
     },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
       defaultLanguage: 'javascript',
     },
-    algolia: {
-      appId: 'BH4D9OD16A',
-      apiKey: '3d7d5825d50ea36bca0e6ad06c926f06',
-      indexName: 'relay',
-      contextualSearch: true,
-    },
+    // algolia: {
+    //   appId: 'BH4D9OD16A',
+    //   apiKey: '3d7d5825d50ea36bca0e6ad06c926f06',
+    //   indexName: 'relay',
+    //   contextualSearch: true,
+    // },
   },
 };
